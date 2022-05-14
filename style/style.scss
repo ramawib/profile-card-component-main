@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@mixin h2Font {
+  font-size: 1rem;
+  color: #969696;
+}
+
+@mixin flexCombo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+// *Background Circle*
+
+.circle {
+  position: fixed;
+  width: 80%;
+}
+.circleTop {
+  right: 40%;
+  bottom: 55%;
+}
+.circleBottom {
+  left: 40%;
+  top: 55%;
+}
+
+// *Background on mobile*
+@media screen and (max-width: 375px) {
+  .circle {
+    position: fixed;
+    width: 100%;
+  }
+  .circleTop {
+    right: 50%;
+    bottom: 70%;
+  }
+  .circleBottom {
+    left: 50%;
+    top: 70%;
+  }
+}
+
+// *Main Element*
+
+#wrapper {
+  @include flexCombo();
+  width: 100%;
+  height: 100vh;
+  background-color: #19a2ae;
+  //   for multiple card case in one page
+  column-gap: 2%;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1.5fr 0.8fr;
+  grid-template-areas:
+    "cardHeader"
+    "cardUser"
+    "cardEngagement";
+  width: 330px;
+  height: 450px;
+  border-radius: 20px;
+  background: white;
+}
+
+.cardElement {
+  @include flexCombo();
+}
+
+.cardHeader {
+  grid-area: cardHeader;
+  background-image: url("../images/bg-pattern-card.svg");
+  border-radius: 20px 20px 0 0;
+}
+
+.cardImage {
+  position: relative;
+  border-radius: 50%;
+  top: 50%;
+  border: white 5px solid;
+}
+
+.cardUser {
+  grid-area: cardUser;
+  flex-direction: column;
+  //   justify-content: flex-end;
+  row-gap: 5%;
+  .userInfo {
+    margin-top: 5%;
+    width: 50%;
+    @include flexCombo();
+    font-size: 0.7rem;
+    h1 {
+      margin-bottom: 1%;
+      margin-right: 5%;
+    }
+    h2 {
+      color: #969696;
+    }
+  }
+  .userCity {
+    @include h2Font();
+  }
+}
+
+.cardEngagement {
+  grid-area: cardEngagement;
+  .userEngagement {
+    @include flexCombo();
+    justify-content: space-around;
+    width: 90%;
+    height: 60%;
+    .userElement {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20%;
+      h1 {
+        font-size: 1.2rem;
+      }
+      h2 {
+        @include h2Font();
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  align-self: flex-end;
+  text-align: center;
+  bottom: 20px;
+}

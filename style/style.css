@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.circle {
+  position: fixed;
+  width: 80%;
+}
+
+.circleTop {
+  right: 40%;
+  bottom: 55%;
+}
+
+.circleBottom {
+  left: 40%;
+  top: 55%;
+}
+
+@media screen and (max-width: 375px) {
+  .circle {
+    position: fixed;
+    width: 100%;
+  }
+  .circleTop {
+    right: 50%;
+    bottom: 70%;
+  }
+  .circleBottom {
+    left: 50%;
+    top: 70%;
+  }
+}
+
+#wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #19a2ae;
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1.5fr 1.5fr 0.8fr;
+      grid-template-rows: 1.5fr 1.5fr 0.8fr;
+      grid-template-areas: "cardHeader" "cardUser" "cardEngagement";
+  width: 330px;
+  height: 450px;
+  border-radius: 20px;
+  background: white;
+}
+
+.cardElement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cardHeader;
+  background-image: url("../images/bg-pattern-card.svg");
+  border-radius: 20px 20px 0 0;
+}
+
+.cardImage {
+  position: relative;
+  border-radius: 50%;
+  top: 50%;
+  border: white 5px solid;
+}
+
+.cardUser {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cardUser;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5%;
+}
+
+.cardUser .userInfo {
+  margin-top: 5%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.7rem;
+}
+
+.cardUser .userInfo h1 {
+  margin-bottom: 1%;
+  margin-right: 5%;
+}
+
+.cardUser .userInfo h2 {
+  color: #969696;
+}
+
+.cardUser .userCity {
+  font-size: 1rem;
+  color: #969696;
+}
+
+.cardEngagement {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cardEngagement;
+}
+
+.cardEngagement .userEngagement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  height: 60%;
+}
+
+.cardEngagement .userEngagement .userElement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 20%;
+}
+
+.cardEngagement .userEngagement .userElement h1 {
+  font-size: 1.2rem;
+}
+
+.cardEngagement .userEngagement .userElement h2 {
+  font-size: 1rem;
+  color: #969696;
+}
+
+.footer {
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
