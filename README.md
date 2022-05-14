@@ -28,7 +28,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-and-fluid-card-component-with-html-and-scss-HkMcjwT85)
 - Live Site URL: [Live Site](https://ramawib.github.io/profile-card-component-main/)
 
 ## My process
@@ -45,7 +45,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 In this challenge, I learned not to underestimate things. I decided to start this challenge as it looks easy enough and said to myself that I can finish this in just 10 minutes. Turns out, it's not as easy as it looks and so this challenge manages to humble myself down. Moreover, now I can see why most developer overestimates their delivery time.
 
-Nonetheless, I learned how to use flex and grid layout on the SCSS. This is the second challenge that I finished from Frontend Mentor. It may not looks as identical as the design (since I don't have the Figma file), but I'm happy with the end result 😊.
+Nonetheless, I learned how to use flex and grid layout on the SCSS. This is the second challenge that I finished from Frontend Mentor. It may not looks as identical as the design especially in the card width and height (since I don't have the Figma file), but I'm happy with the end result 😊.
 
 ### Continued development
 
